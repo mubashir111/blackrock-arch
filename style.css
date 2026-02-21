@@ -66,7 +66,7 @@ ul {
 }
 
 .gold-text {
-    color: var(--gold);
+    color: #C5A059;
 }
 
 .text-center {
@@ -174,8 +174,8 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.15) 100%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 0 40px;
     height: 45px;
     display: flex;
@@ -216,8 +216,8 @@ ul {
     height: 45px;
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.15) 100%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.4);
     color: #111;
     font-family: var(--font-body);
@@ -240,10 +240,10 @@ ul {
 
 .btn-explore {
     background: rgba(10, 10, 10, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(212, 175, 55, 0.4);
-    color: #eedd82;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    color: #C5A059;
     padding: 12px 28px;
     border-radius: 8px;
     font-size: 1rem;
@@ -259,10 +259,10 @@ ul {
 
 .btn-visit {
     background: rgba(10, 10, 10, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #eedd82;
+    color: #C5A059;
     padding: 12px 28px;
     border-radius: 8px;
     font-size: 1rem;
@@ -316,39 +316,45 @@ ul {
     flex-direction: column;
     justify-content: flex-end;
     /* Push text to bottom left area like standard hero */
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+    padding-left: 80px;
+    /* Shift content right to match image spacing */
 }
 
 .hero-text-content {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    /* Reduce bottom margin, buttons are tight */
+    max-width: 800px;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 7rem;
-    /* Larger as per Figma */
-    line-height: 0.95;
+    font-size: 8.5rem;
+    /* Larger to match the gigantic serif in the image */
+    line-height: 0.9;
     font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .serif-gold {
-    color: #cda256;
+    color: #C5A059;
     display: block;
     margin-bottom: 5px;
 }
 
 .serif-light {
-    color: #cda256;
+    color: #C5A059;
     font-weight: 400;
 }
 
 .hero-subtitle {
-    font-size: 0.95rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
     color: #e0e0e0;
-    max-width: 500px;
-    margin-bottom: 35px;
+    max-width: 600px;
+    margin-bottom: 45px;
     line-height: 1.6;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .hero-buttons {
@@ -367,7 +373,7 @@ ul {
 }
 
 .slide-indicator {
-    background: #eedd82;
+    background: #C5A059;
     color: #111;
     width: 100px;
     /* Wider block */
