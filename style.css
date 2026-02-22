@@ -674,6 +674,9 @@ ul {
     padding: 150px 0;
     position: relative;
     overflow: hidden;
+    background-color: #0b0b0b;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
 }
 
 .bg-text-innovative,
@@ -704,7 +707,7 @@ ul {
     z-index: 1;
     margin-bottom: 80px;
     padding-top: 80px;
-    height: 900px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -721,12 +724,15 @@ ul {
 
 .always-best-block {
     position: absolute;
-    top: 480px;
+    top: 680px;
+    /* 100px+ clearance from the lowest diamond (350px + ~260px) */
     /* Hard center text */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    /* Anchor from top instead of center to prevent expanding up into images */
     text-align: center;
-    z-index: 5;
+    z-index: 50;
+    /* Ensure this is always on top */
     width: 100%;
     max-width: 600px;
 }
@@ -780,9 +786,9 @@ ul {
 .diamond-item.main-diamond {
     left: 50%;
     margin-left: -150px;
-    /* Center perfectly above text offset exactly half the width */
-    top: -50px;
-    z-index: 3;
+    /* Center of image is exactly at 50% */
+    top: 50px;
+    z-index: 5;
     border: none;
 }
 
@@ -790,78 +796,116 @@ ul {
     width: 100%;
     height: 100%;
     transform: none;
-    top: 0;
-    left: 0;
 }
 
 /* Top Left (Stairs) - Diamond shape */
 .diamond-item.item-1 {
     left: 50%;
-    margin-left: -500px;
-    /* Force it far left of center */
-    top: 100px;
+    margin-left: -520px;
+    /* -150px (center) - 370px (spacing) = -520px */
+    top: 200px;
+    /* 50px + 150px = 200px (First Step Down) */
+    z-index: 4;
     transform: rotate(-25deg);
-    /* Diamond shape */
-    z-index: 1;
 }
 
 .diamond-item.item-1 .diamond-inner {
+    width: 100%;
+    height: 100%;
     transform: none;
-    /* slight zoom */
+    /* Let the crop naturally slant */
 }
 
 /* Top Right (Living Room) - Diamond shape */
 .diamond-item.item-3 {
     left: 50%;
-    margin-left: 200px;
-    /* Force it far right of center */
-    top: 100px;
+    margin-left: 220px;
+    /* -150px (center) + 370px (spacing) = 220px */
+    top: 200px;
+    /* 50px + 150px = 200px (First Step Down) */
+    z-index: 4;
     transform: rotate(25deg);
-    /* Diamond shape */
-    z-index: 2;
 }
 
 .diamond-item.item-3 .diamond-inner {
+    width: 100%;
+    height: 100%;
     transform: none;
-    /* slight zoom */
+    /* Let the crop naturally slant */
 }
 
 /* Bottom Left (Bedroom) - Slanted Rectangle */
 .diamond-item.item-5 {
     left: 50%;
-    margin-left: -650px;
-    /* Hard drop below text far left */
-    top: 450px;
-    transform: rotate(-45deg);
-    /* Slanted rectangle */
+    margin-left: -890px;
+    top: 60%;
     z-index: 3;
+    transform: rotate(-45deg);
 }
 
 .diamond-item.item-5 .diamond-inner {
-    width: 100%;
-    height: 100%;
-    transform: none;
-    top: 0;
-    left: 0;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    transform: rotate(45deg) scale(1.1);
+    /* Counter rotation inside */
 }
 
 /* Bottom Right (Bathroom) - Slanted Rectangle */
 .diamond-item.item-4 {
     left: 50%;
-    margin-left: 350px;
-    /* Hard drop below text far right */
-    top: 450px;
+    margin-left: 590px;
+    /* 220px (right 1) + 370px (spacing) = 590px */
+    top: 60%;
+    /* 200px + 150px = 350px (Second Step Down) */
+    z-index: 3;
     transform: rotate(45deg);
-    /* Slanted rectangle counter */
-    z-index: 4;
 }
 
 .diamond-item.item-4 .diamond-inner {
-    width: 100%;
-    height: 100%;
-    transform: none;
-    top: 0;
-    left: 0;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    transform: rotate(-45deg) scale(1.1);
+    /* Counter rotation inside */
+}
+
+/* Responsive Grid Scaling Constraint */
+@media (max-width: 1950px) {
+    .diamond-grid {
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 1600px) {
+    .diamond-grid {
+        transform: scale(0.7);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .diamond-grid {
+        transform: scale(0.55);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 991px) {
+    .diamond-grid {
+        transform: scale(0.4);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 768px) {
+    .diamond-grid {
+        transform: scale(0.3);
+        transform-origin: top center;
+    }
 }
 
 /* --- Section 3: Our Services --- */
