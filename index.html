@@ -29,32 +29,36 @@
     <header class="header">
         <div class="container header-container">
             <!-- Logo Group -->
-            <a href="#" class="logo-group">
-                <div class="logo-circle">
-                    We<span
-                        style="font-size: 0.25rem; letter-spacing: 1px; margin-top: -3px; font-family: var(--font-body);">ARCHITECTS</span>
-                </div>
-                <div class="logo-circle logo-icon">
-                    <img src="assets/logo-icon.svg" alt="BR" style="width: 14px; margin-bottom: 2px;">
-                    <span
-                        style="font-size: 0.25rem; letter-spacing: 1px; font-family: var(--font-body); display: block; line-height: 1;">ARCHITECTS</span>
-                </div>
-                <span class="logo-text">BLACK ROCK<br><span class="logo-sub">ARCHITECTS</span></span>
-            </a>
+            <div>
+                <a href="#" class="logo-group">
+                    <div class="logo-circle">
+                        <img src="assets/images/navbar/we.png" alt="BR" style="width: 14px; margin-bottom: 2px;"><span
+                            style="font-size: 0.25rem; letter-spacing: 1px; margin-top: -3px; font-family: var(--font-body);">ARCHITECTS</span>
+                    </div>
+                    <div class="logo-circle logo-icon">
+                        <img src="assets/images/navbar/br.png" alt="BR" style="width: 14px; margin-bottom: 2px;">
+                        <span
+                            style="font-size: 0.25rem; letter-spacing: 1px; font-family: var(--font-body); display: block; line-height: 1;">ARCHITECTS</span>
+                    </div>
+                    <span class="logo-text">BLACK ROCK<br><span class="logo-sub">ARCHITECTS</span></span>
+                </a>
+            </div>
 
             <!-- Centered Glass Pill Nav -->
-            <nav class="nav-pill">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div>
+                <nav class="nav-pill">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Actions -->
-            <div class="header-actions">
-                <button class="lang-btn">EN</button>
+                <!-- Actions -->
+                <div class="header-actions">
+                    <button class="lang-btn">EN</button>
+                </div>
             </div>
         </div>
     </header>
@@ -70,7 +74,7 @@
             <div class="container hero-content-wrapper">
                 <div class="hero-text-content">
                     <h1 class="hero-title serif-gold">
-                        Blackrock Architect<br>FZ L.L.C
+                        Blackrock<br>Architect FZ L.L.C
                     </h1>
                     <p class="hero-subtitle">Innovative and modern design solutions. Lorem ipsum dolor sit amet,<br>
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
@@ -81,36 +85,47 @@
                                 style="margin-left: 5px; color: #eedd82;"></i></a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Slide Controls (Bottom Right) -->
-                <div class="hero-slider-controls">
-                    <div class="slide-indicator">
-                        <span class="current-slide">01</span>
-                    </div>
-                    <button class="next-slide-btn">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+            <!-- Slide Controls (Bottom Right) -->
+            <div class="hero-slider-controls">
+                <div class="slide-indicator">
+                    <span class="current-slide">01</span>
                 </div>
+                <button class="next-slide-btn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
             </div>
         </section>
 
         <!-- Excellence / Stats Section -->
         <section class="excellence-section">
-            <div class="container">
-                <div class="excellence-grid-new">
+            <div class="container relative-container">
+                <!-- Background Line (Optional depending on how we do the dashed line) -->
+                <!-- <img src="assets/images/navbar/section2/line.png" class="bg-dashed-line" alt=""> -->
+
+                <div class="excellence-header-row">
                     <!-- Left Side -->
-                    <div class="excellence-left">
+                    <div class="exc-col-left">
                         <span class="cursive-sub">Blackrock Architect</span>
-                        <h2 class="excellence-heading">Delivering architectural<br> excellence through<br> vision,
-                            innovation, and<br> timeless design</h2>
+                        <h2 class="excellence-heading">
+                            Delivering architectural<br>
+                            excellence through<br>
+                            vision, innovation, and<br>
+                            timeless design
+                        </h2>
+                    </div>
+
+                    <!-- Center Badge -->
+                    <div class="exc-col-center">
+                        <div class="badge-wrapper">
+                            <img src="assets/images/navbar/section2/16.png" alt="16 Years Badge" class="badge-img">
+                        </div>
                     </div>
 
                     <!-- Right Side -->
-                    <div class="excellence-right">
-                        <div class="experience-block">
-                            <span class="number-large">16</span>
-                            <span class="exp-text">EXPERIENCE OF 16 YEARS</span>
-                        </div>
+                    <div class="exc-col-right">
+                        <span class="exp-title">YEARS OF COLLECTIVE EXPERIENCE</span>
                         <p class="excellence-desc">
                             We transform empty spaces into timeless masterpieces, blending creativity, precision, and
                             passion to design structures that not only stand tall but also speak stories of elegance,
@@ -120,18 +135,18 @@
                 </div>
 
                 <!-- Client Stats Grid -->
-                <div class="client-stats-grid">
+                <div class="client-stats-row">
                     <div class="client-stat-item">
-                        <p>100+ very satisfied clients around the world.</p>
+                        <p><strong>100+</strong> very satisfied clients<br>around the world.</p>
                         <span class="stat-num">01</span>
                     </div>
                     <div class="client-stat-item">
-                        <p>100+ very satisfied clients around the world.</p>
-                        <span class="stat-num">01</span>
+                        <p><strong>80+</strong> successful designs<br>completed.</p>
+                        <span class="stat-num">02</span>
                     </div>
                     <div class="client-stat-item">
-                        <p>100+ very satisfied clients around the world.</p>
-                        <span class="stat-num">01</span>
+                        <p><strong>100%</strong> score for completing<br>works ahead of time.</p>
+                        <span class="stat-num">03</span>
                     </div>
                 </div>
             </div>
@@ -139,40 +154,47 @@
 
         <!-- Projects Timeline (ZigZag) -->
         <section class="timeline-section">
-            <div class="container">
+            <div class="container relative-container">
+
+                <!-- Background Dashed Line mapping to the items -->
+                <div class="dashed-line-bg"></div>
+
                 <!-- Item 1: Modern Designs -->
                 <div class="timeline-item">
                     <div class="timeline-image image-left">
-                        <img src="assets/images/project-modern.jpg" alt="Modern Designs">
+                        <img src="assets/images/navbar/section2/car.jpg" alt="Modern Designs">
                     </div>
-                    <div class="timeline-content content-right overlap-box">
-                        <div class="icon-circle"><i class="fa-solid fa-play"></i></div>
-                        <h3>Modern<br>Designs</h3>
-                        <p>“Where simplicity shapes the beauty of modern spaces.”</p>
+                    <div class="timeline-content content-right overlap-box box-dark">
+                        <div class="box-top-icon"><i class="fa-solid fa-arrow-up-right"></i></div>
+                        <div class="icon-circle gold"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="serif-light">Modern<br><span class="outlined-thin">Designs</span></h3>
+                        <p class="quote-text">“Where simplicity shapes the<br>beauty of modern spaces.”</p>
                     </div>
                 </div>
 
                 <!-- Item 2: Interior Designs (Reverse) -->
                 <div class="timeline-item reverse">
                     <div class="timeline-image image-right">
-                        <img src="assets/images/project-interior.jpg" alt="Interior Designs">
+                        <img src="assets/images/navbar/section2/room.jpg" alt="Interior Designs">
                     </div>
-                    <div class="timeline-content content-left overlap-box">
-                        <div class="icon-circle"><i class="fa-solid fa-play"></i></div>
-                        <h3>Interior<br>Designs</h3>
-                        <p>“Where simplicity shapes the beauty of modern spaces.”</p>
+                    <div class="timeline-content content-left overlap-box box-dark">
+                        <div class="box-top-icon"><i class="fa-solid fa-arrow-up-left"></i></div>
+                        <div class="icon-circle gold"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="serif-light">Interior<br><span class="outlined-thin">Designs</span></h3>
+                        <p class="quote-text">“Where simplicity shapes the<br>beauty of modern spaces.”</p>
                     </div>
                 </div>
 
                 <!-- Item 3: Exterior Designs -->
                 <div class="timeline-item">
                     <div class="timeline-image image-left">
-                        <img src="assets/images/project-exterior.jpg" alt="Exterior Designs">
+                        <img src="assets/images/navbar/section2/sofa.jpg" alt="Exterior Designs">
                     </div>
-                    <div class="timeline-content content-right overlap-box">
-                        <div class="icon-circle"><i class="fa-solid fa-play"></i></div>
-                        <h3>Exterior<br>Designs</h3>
-                        <p>“Where simplicity shapes the beauty of modern spaces.”</p>
+                    <div class="timeline-content content-right overlap-box box-dark">
+                        <div class="box-top-icon"><i class="fa-solid fa-arrow-up-right"></i></div>
+                        <div class="icon-circle gold"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="serif-light">Exterior<br><span class="outlined-thin">Designs</span></h3>
+                        <p class="quote-text">“Where simplicity shapes the<br>beauty of modern spaces.”</p>
                     </div>
                 </div>
             </div>
@@ -180,162 +202,200 @@
 
         <!-- Innovative Designs (Diamond Grid) -->
         <section class="innovative-designs">
-            <div class="container">
-                <h2 class="section-heading-large">Innovative <br> <span class="outline-text">Designs</span></h2>
+            <div class="container relative-container">
+                <!-- Large Background Text -->
+                <div class="bg-text-innovative">Innovative</div>
+                <div class="bg-text-designs">Designs</div>
 
                 <div class="diamond-grid-wrapper">
                     <div class="diamond-grid">
-                        <div class="diamond-item item-1">
+                        <div class="diamond-item item-1 fade-up-element">
                             <div class="diamond-inner">
-                                <img src="assets/images/diamond-1.jpg" alt="Design 1">
+                                <img src="assets/images/navbar/section2/slider/slider2.jpg" alt="Design 1">
                             </div>
                         </div>
-                        <div class="diamond-item item-2 main-diamond">
+                        <div class="diamond-item main-diamond fade-up-element">
                             <div class="diamond-inner">
-                                <img src="assets/images/diamond-2.jpg" alt="Design 2">
-                            </div>
-                            <div class="diamond-text-overlay">
-                                <h3>We Always Make<br><span>The Best</span></h3>
+                                <img src="assets/images/navbar/section2/slider/slider3.jpg" alt="Design 2">
                             </div>
                         </div>
-                        <div class="diamond-item item-3">
+                        <div class="diamond-item item-3 fade-up-element">
                             <div class="diamond-inner">
-                                <img src="assets/images/diamond-3.jpg" alt="Design 3">
+                                <img src="assets/images/navbar/section2/slider/slider4.jpg" alt="Design 3">
                             </div>
                         </div>
-                        <div class="diamond-item item-4">
+                        <div class="diamond-item item-4 fade-up-element">
                             <div class="diamond-inner">
-                                <img src="assets/images/diamond-4.jpg" alt="Design 4">
+                                <img src="assets/images/navbar/section2/slider/slider5.jpg" alt="Design 4">
+                            </div>
+                        </div>
+                        <!-- New Bottom Corner Image -->
+                        <div class="diamond-item item-5 fade-up-element">
+                            <div class="diamond-inner">
+                                <img src="assets/images/navbar/section2/slider/slider1.jpg" alt="Design 5">
+                            </div>
+                        </div>
+
+                        <!-- We Always Make The Best Block -->
+                        <div class="always-best-block fade-in-element">
+                            <h3 class="serif-gold">We Always Make<br>The Best</h3>
+                            <p class="desc-text text-center">
+                                Innovative and modern design solutions.<br>
+                                Lorem ipsum dolor sit amet, consectetur<br>
+                                adipiscing elit, sed do.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Our Services Section -->
+                <section class="services-section">
+                    <div class="container relative-container">
+                        <!-- Hanging Lamps -->
+                        <div class="hanging-lamps">
+                            <div class="lamp-group drop-down-element">
+                                <div class="lamp-wire"></div>
+                                <img src="assets/images/section3/Polygon 2.png" alt="Lamp" class="lamp-cone">
+                            </div>
+                            <div class="lamp-group drop-down-element">
+                                <div class="lamp-wire"></div>
+                                <img src="assets/images/section3/Polygon 2.png" alt="Lamp" class="lamp-cone">
+                            </div>
+                            <div class="lamp-group drop-down-element">
+                                <div class="lamp-wire"></div>
+                                <img src="assets/images/section3/Polygon 2.png" alt="Lamp" class="lamp-cone">
+                            </div>
+                            <div class="lamp-group drop-down-element">
+                                <div class="lamp-wire"></div>
+                                <img src="assets/images/section3/Polygon 2.png" alt="Lamp" class="lamp-cone">
+                            </div>
+                        </div>
+
+                        <div class="services-header text-center fade-up-element">
+                            <h2 class="serif-gold">Our Services</h2>
+                            <p class="desc-text-sm">Innovative and modern design solutions. Lorem ipsum dolo</p>
+                        </div>
+
+                        <div class="services-cards-wrapper">
+                            <div class="sr-card sr-card-1 fade-up-element">
+                                <div class="sr-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                                <h4>Architectural<br>Design</h4>
+                                <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                            </div>
+                            <div class="sr-card sr-card-2 fade-up-element">
+                                <div class="sr-icon"><i class="fa-solid fa-couch"></i></div>
+                                <h4>Interior<br>Design</h4>
+                                <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                            </div>
+                            <div class="sr-card sr-card-3 fade-up-element">
+                                <div class="sr-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <h4>Exterior<br>Design</h4>
+                                <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                            </div>
+                            <div class="sr-card sr-card-4 fade-up-element">
+                                <div class="sr-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                                <h4>Turnkey<br>Solutions</h4>
+                                <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <!-- Divider Text -->
+                <div class="services-divider text-center">
+                    <p>"Innovative and modern design solutions. Lorem ipsum dolo Innovative and modern<br>
+                        design solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."</p>
+                    <div class="gold-line"></div>
                 </div>
 
-                <div class="text-center mt-5 mb-5 mx-auto" style="max-width: 600px; padding-top: 40px;">
-                    <p style="color: var(--text-muted); line-height: 1.8;">
-                        Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do.
-                    </p>
-                </div>
+                <!-- Blogs Section -->
+                <section class="blogs-section">
+                    <div class="container container-narrow">
+                        <div class="blogs-header text-center fade-up-element">
+                            <h2 class="serif-gold">Blogs, Updates & Articles</h2>
+                            <p class="desc-text-sm">Innovative and modern design solutions. Lorem ipsum dolo</p>
+                        </div>
 
-                <div class="services-lamps">
-                    <div class="lamp-item">
-                        <img src="assets/lamp-icon.png" alt="" class="lamp-img"> <!-- Placeholder -->
-                        <span>Architecture Design</span>
+                        <div class="blog-list-wide">
+                            <!-- Blog 1 -->
+                            <article class="blog-wide-card fade-up-element" style="transition-delay: 0.1s;">
+                                <div class="blog-wide-img">
+                                    <img src="assets/images/section3/Frame 146.png" alt="Upcoming Hillside Bungalow">
+                                </div>
+                                <div class="blog-wide-content">
+                                    <h3 class="serif-gold-light">Upcoming Hillside Bungalow</h3>
+                                    <p class="blog-wide-desc">Innovative and modern design solutions. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et Innovative and modern design solutions. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...
+                                    </p>
+                                    <div class="blog-wide-footer">
+                                        <span class="blog-date">April 20, 2025</span>
+                                        <a href="#" class="btn-read-dark">Read more</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog 2 -->
+                            <article class="blog-wide-card fade-up-element" style="transition-delay: 0.2s;">
+                                <div class="blog-wide-img">
+                                    <img src="assets/images/section3/Frame 147.png" alt="Modern Kitchen Design Methods">
+                                </div>
+                                <div class="blog-wide-content">
+                                    <h3 class="serif-gold-light">Modern Kitchen Design Methods</h3>
+                                    <p class="blog-wide-desc">Innovative and modern design solutions. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et Innovative and modern design solutions. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...
+                                    </p>
+                                    <div class="blog-wide-footer">
+                                        <span class="blog-date">April 20, 2025</span>
+                                        <a href="#" class="btn-read-dark">Read more</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Blog 3 -->
+                            <article class="blog-wide-card fade-up-element" style="transition-delay: 0.3s;">
+                                <div class="blog-wide-img">
+                                    <img src="assets/images/section3/Frame 148.png"
+                                        alt="New subsidiary by Blackrock Arc. LLZ.">
+                                </div>
+                                <div class="blog-wide-content">
+                                    <h3 class="serif-gold-light">New subsidiary by Blackrock Arc. LLZ.</h3>
+                                    <p class="blog-wide-desc">Innovative and modern design solutions. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore et Innovative and modern design solutions. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...
+                                    </p>
+                                    <div class="blog-wide-footer">
+                                        <span class="blog-date">April 20, 2025</span>
+                                        <a href="#" class="btn-read-dark">Read more</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="view-all-container">
+                            <a href="#" class="btn-read-dark">See more</a>
+                        </div>
                     </div>
-                    <div class="lamp-item">
-                        <img src="assets/lamp-icon.png" alt="" class="lamp-img">
-                        <span>Interior Design</span>
+                </section>
+
+                <!-- Quote Section -->
+                <section class="quote-section">
+                    <div class="container text-center">
+                        <blockquote>
+                            "Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit,
+                            sed do"
+                        </blockquote>
+                        <cite>- consectetur adipiscing</cite>
                     </div>
-                    <div class="lamp-item">
-                        <img src="assets/lamp-icon.png" alt="" class="lamp-img">
-                        <span>Green Building</span>
-                    </div>
-                    <div class="lamp-item">
-                        <img src="assets/lamp-icon.png" alt="" class="lamp-img">
-                        <span>Restoration</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Grid Small -->
-        <section class="services-small">
-            <div class="container services-grid">
-                <div class="service-box">
-                    <i class="fa-solid fa-compass-drafting gold-icon"></i>
-                    <h4>Architecture<br>Design</h4>
-                    <p>Innovative solutions for residential and commercial spaces.</p>
-                </div>
-                <div class="service-box">
-                    <i class="fa-solid fa-couch gold-icon"></i>
-                    <h4>Interior<br>Design</h4>
-                    <p>Creating functional and beautiful interior environments.</p>
-                </div>
-                <div class="service-box">
-                    <i class="fa-solid fa-leaf gold-icon"></i>
-                    <h4>Green<br>Design</h4>
-                    <p>Sustainable and eco-friendly building practices.</p>
-                </div>
-                <div class="service-box">
-                    <i class="fa-solid fa-helmet-safety gold-icon"></i>
-                    <h4>Service<br>Delivery</h4>
-                    <p>Timely and efficient project execution and delivery.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blogs Section -->
-        <section class="blogs-section">
-            <div class="container">
-                <h2 class="section-title text-center">Blogs, Updates & Articles</h2>
-                <div class="blog-list">
-                    <!-- Blog 1 -->
-                    <article class="blog-row-card">
-                        <div class="blog-thumb">
-                            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=800&auto=format&fit=crop"
-                                alt="Modern Home">
-                        </div>
-                        <div class="blog-details">
-                            <h3>Vespucci Glassy Homes</h3>
-                            <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="blog-meta">
-                                <span class="blog-date">Apr 01, 2024</span>
-                                <a href="#" class="read-more">Read more</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Blog 2 -->
-                    <article class="blog-row-card">
-                        <div class="blog-thumb">
-                            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=800&auto=format&fit=crop"
-                                alt="Modern Kitchen">
-                        </div>
-                        <div class="blog-details">
-                            <h3>Modern Kitchen Design Methods</h3>
-                            <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <div class="blog-meta">
-                                <span class="blog-date">Mar 28, 2024</span>
-                                <a href="#" class="read-more">Read more</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Blog 3 -->
-                    <article class="blog-row-card">
-                        <div class="blog-thumb">
-                            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=800&auto=format&fit=crop"
-                                alt="Subsidiary">
-                        </div>
-                        <div class="blog-details">
-                            <h3>New subsidiary by Blackrock Inc. LLC.</h3>
-                            <p>Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <div class="blog-meta">
-                                <span class="blog-date">Mar 15, 2024</span>
-                                <a href="#" class="read-more">Read more</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="view-all-container">
-                    <a href="#" class="btn btn-outline">View Details</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quote Section -->
-        <section class="quote-section">
-            <div class="container text-center">
-                <blockquote>
-                    "Innovative and modern design solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do"
-                </blockquote>
-                <cite>- consectetur adipiscing</cite>
-            </div>
-        </section>
+                </section>
 
     </main>
 

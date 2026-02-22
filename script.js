@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideIndicator = document.querySelector('.current-slide');
     const nextBtn = document.querySelector('.next-slide-btn');
     const heroTitle = document.querySelector('.hero-title');
-    
+
     let currentSlide = 1;
     const totalSlides = 3;
 
     // Entrance Animation
-    if(heroTitle) {
+    if (heroTitle) {
         heroTitle.style.opacity = '0';
         heroTitle.style.transform = 'translateY(20px)';
         heroTitle.style.transition = 'opacity 1s ease, transform 1s ease';
-        
+
         setTimeout(() => {
             heroTitle.style.opacity = '1';
             heroTitle.style.transform = 'translateY(0)';
@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentSlide > totalSlides) {
                 currentSlide = 1;
             }
-            
+
             // Animate Number Change
             slideIndicator.style.opacity = '0';
             slideIndicator.style.transform = 'translateY(-10px)';
-            
+
             setTimeout(() => {
                 slideIndicator.textContent = `0${currentSlide}`;
                 slideIndicator.style.opacity = '1';
@@ -46,11 +46,31 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            if(target) {
+            if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
             }
         });
     });
+
+    // Scroll Animations (Intersection Observer)
+    const observerOptions = {
+        threshold: 0.15, // Trigger when 15% is visible
+        rootMargin: "0px 0px -50px 0px" // Trigger slightly before it hits the true bottom
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Optional: Stop observing once it's visible so it doesn't fade out and in again
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Grab all elements marked for animation
+    const animatedElements = document.querySelectorAll('.fade-up-element, .drop-down-element, .fade-in-element');
+    animatedElements.forEach(el => scrollObserver.observe(el));
 });
