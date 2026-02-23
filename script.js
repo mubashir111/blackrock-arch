@@ -73,4 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Grab all elements marked for animation
     const animatedElements = document.querySelectorAll('.fade-up-element, .drop-down-element, .fade-in-element');
     animatedElements.forEach(el => scrollObserver.observe(el));
+    // JS-Driven carousel logic removed in favor of 100% smooth CSS orbit animations
+
+    // Lamp Hover Interaction
+    const srCards = document.querySelectorAll('.sr-card');
+    srCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            const lampId = card.getAttribute('data-lamp');
+            const lamp = document.getElementById(lampId);
+            if (lamp) lamp.classList.add('is-active');
+        });
+        card.addEventListener('mouseleave', () => {
+            const lampId = card.getAttribute('data-lamp');
+            const lamp = document.getElementById(lampId);
+            if (lamp) lamp.classList.remove('is-active');
+        });
+    });
 });
